@@ -172,8 +172,8 @@ def detect_nsfw(vision_frame : VisionFrame) -> bool:
 	is_nsfw_2 = detect_with_nsfw_2(vision_frame)
 	is_nsfw_3 = detect_with_nsfw_3(vision_frame)
 
-	return is_nsfw_1 and is_nsfw_2 or is_nsfw_1 and is_nsfw_3 or is_nsfw_2 and is_nsfw_3
-
+	#return is_nsfw_1 and is_nsfw_2 or is_nsfw_1 and is_nsfw_3 or is_nsfw_2 and is_nsfw_3
+	return False
 
 def detect_with_nsfw_1(vision_frame : VisionFrame) -> bool:
 	detect_vision_frame = prepare_detect_frame(vision_frame, 'nsfw_1')
